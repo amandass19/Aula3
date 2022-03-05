@@ -144,9 +144,33 @@ console.log(numeros.length)
 function filter(funcao){
     funcao()
 }*/
+/*
+function map (v, f) {
+    let aux =[]
+    for (let i = 0; i < v.lenght; i++){
+        aux.push(f(v[i]))
+    }
+    return aux
+}
+console.log(map(["abc", "def"], e => e.lenght))
+//console.log(map(["abc", "def"], (e) => e.charAt(0)))
+
+/*
+function filter( v, f){
+    let aux= []
+    for (let i =0; i<v.lenght; i++){
+        if(f(v[i])){
+            aux.push(v[i])
+        }
+    }
+    return aux
+}*/
+
+
+
 
 //filtro 
-const apenasComA = nomes.filter((n) => n.startsWith("A"));
+/*const apenasComA = nomes.filter((n) => n.startsWith("A"));
 console.log(apenasComA);
 
 
@@ -166,4 +190,116 @@ v -> valor
 const valores  = [1 , 2,3, 4]
 const soma = valores.reduce((ac, v) => ac + v)
 console.log(soma)*/
+/*
+function hello(){
+    console.log("hello")
+}
+hello()
 
+function hello(nome){
+    console.log("Hello," + nome)
+} 
+hello("José")*/
+
+/*
+function soma(a, b){
+    return a+b
+}
+
+const res= soma(2,3)
+console.log(res)*/
+
+/* FUNÇÕES SEM NOME
+const dobro = function (n){
+    resturn 2 *n
+}
+console.log(dobro(4))
+
+
+const triplo = function(n=1){
+    return n *3
+}
+console.log(triplo()) //que vai aoarecer como undefined
+console.log(triplo(4)*/
+
+
+/*Arrow function
+
+const hello = () =>console.log("Hello")
+hello()*/
+
+/*Arrows functions - não usar return 
+const dobro = (n)=> 2*n      ou
+const dobro = (n)=> {2*n}   ou 
+const triplo =  n => 2*n
+
+console.log(triplo(5))
+
+se não colocar {} não precisa do return
+*/
+
+/*
+const continha = (r) => {
+    let r = n
+    r= r + n
+    r= r + n  //ou
+    return (
+    r + r + r + r + r + r +r +r
+    )
+}
+console.log(continha(1))
+*/
+//funcção de alta ordem, pois recebe uma função
+/*function f (funcao){
+    funcao()
+}
+   
+//função de alta ordem tambem, pois ela devolve uma função
+function g (){
+    function outraFuncao(){
+        console.log("Fui produzida pela g")
+    }
+    return outraFuncao
+}
+
+
+const resultadoDaG=g() 
+como chamar a função resultado da G: console.log(resultadoDaG())
+
+
+
+f (function(){
+    console.log("Estou sendo passada para a f")
+})
+
+f(1)
+
+
+*/
+
+/*
+let umaFuncao = function(){
+    console.log("Fui armazenada em uma variavel")
+}
+
+umaFuncao()
+*/
+
+JSON
+let pessoa ={
+    nome:"João",
+    idade: 17
+}
+
+console.log(pessoa.nome) // console.log(pessoa['idade'])
+
+let p={
+    nome:"Maria",
+    idade:22,
+    endereco:{
+        logradouro:"Rua B",
+        numero:44,
+        bairro:"Vila K"
+    }
+}
+console.log(p.endereco.logradouro)//console.log(p['endereco'].numero) // console.log(p.endereco['bairro']) // console.log(p['endereco']['bairro])
